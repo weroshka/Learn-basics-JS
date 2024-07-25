@@ -86,5 +86,13 @@ const employee = {
     console.log("Work!");
   },
 };
+delete employee.age;
+console.log(employee);
 employee.career();
 employee.gender = "male";
+console.log(`Его зовут ${employee.name}`);
+
+//there are to ways to use property. If it has tab, we use []
+employee["the age"] = 21;
+console.log(employee);
+console.log(employee["the age"]);
